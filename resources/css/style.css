@@ -567,18 +567,13 @@ li {
     font-weight: 900;
 }
 
-.relative-flipper {
-    position: relative;
-    top: -90px;
-}
-
 @media (max-width: 1199px) {
     .social-actions {
         width: 150px;
     }
 
     .responsive-breadcrumb {
-        width: 400px !important;
+        min-width: 400px;
     }
 
     .big-image img {
@@ -591,26 +586,23 @@ li {
     }
 
     .small-image img {
-        height: 200px;
+        min-height: 236px;
+        min-width: 175px;
         margin-left: 10px;
-        margin-top: 10px;
     }
 
     .room-title {
         font-size: 14px;
     }
-}
-
-@media (max-width: 1399px) {
-
-    .medium-image img {
-        margin-left: 10px;
+    
+    .room-pic {
+        width: 350px;
+        height: 300px;
+        border-radius: 10px;
     }
 
-    .small-image img {
-        height: 230px;
-        margin-left: 10px;
-        margin-top: 10px;
+    .certificate-map {
+        margin-right: 30px;
     }
 
     .room-info {
@@ -622,4 +614,114 @@ li {
         justify-content: space-between;
         align-items: center;
     }
+}
+
+
+@media (min-width: 1399px) {
+    .small-image img {
+        min-height: 235px;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-breadcrumb {
+        min-width: 275px;
+    }
+
+    .breadcrumb-link {
+        font-size: 8px;
+        padding-top: 5px;
+    }
+
+    .social-actions-area {
+        position: absolute;
+        right: 3px;
+    }
+
+    .social-actions {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .social-actions-item a {
+        font-size: 10px;
+    }
+
+    .medium-image img {
+        position: relative;
+        min-width: 530px !important;
+        min-height: 240px;
+    }
+
+    .small-image img {
+        margin-top: 30px;
+        min-width: 255px !important;
+        min-height: 200px !important;
+    }
+
+    .more-picture-button {
+        position: relative;
+        left: 135px !important;
+    }
+}
+
+
+@media (max-width: 1399px) and (min-width: 1199px) {
+
+    .medium-image img {
+        margin-left: 10px;
+    }
+
+    .small-image img {
+        position: relative;
+        min-width: 225px;
+        min-height: 235px;
+        margin-left: 10px;
+        margin-top: 10px;
+        top: -10px;
+    }
+
+    .room-info {
+        margin-right: 10px;
+    }
+
+    .room-border {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .social-actions {
+        position: relative;
+        top: -10px;
+        left: -25px;
+    }
+    
+    .medium-image img {
+        min-width: 710px;
+        min-height: 240;
+    }
+
+    .small-image img {
+        position: relative;
+        min-width: 348px;
+        top: -20px;
+    }
+
+    .more-picture-button {
+        left: 180px;
+        top: -125px;
+    }
+
+    .certificate-map {
+        position: relative;
+        left: -90px;
+        margin-bottom: 10px;
+    }
+}
+
+.facility {
+    margin-bottom: 15px;
 }
